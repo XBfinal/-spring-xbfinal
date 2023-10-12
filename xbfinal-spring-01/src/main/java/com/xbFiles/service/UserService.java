@@ -9,9 +9,8 @@ import com.xbSpring.Scope;
  * @Date 2023/10/12 15:22
  * @注释
  */
-
+@Scope("xxx")
 @Component("userService")
-@Scope
 public class UserService {
 
 }
