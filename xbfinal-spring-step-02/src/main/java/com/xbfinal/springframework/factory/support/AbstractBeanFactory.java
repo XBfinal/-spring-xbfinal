@@ -12,7 +12,7 @@ import com.xbfinal.springframework.factory.config.BeanDefinition;
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
     @Override
     public Object getBean(String name) {
-        //调用继承DefaultSingletonBeanRegistry实现的方法
+        //调用继承DefaultSingletonBeanRegistry的getSingleton 实现的方法
         Object bean = getSingleton(name);
         if(bean != null){
             return bean;

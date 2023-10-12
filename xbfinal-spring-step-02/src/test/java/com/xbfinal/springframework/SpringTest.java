@@ -1,7 +1,6 @@
 package com.xbfinal.springframework;
 
 import com.xbfinal.springframework.factory.config.BeanDefinition;
-import com.xbfinal.springframework.factory.BeanFactory;
 import com.xbfinal.springframework.factory.support.DefaultListableBeanFactory;
 import org.junit.Test;
 

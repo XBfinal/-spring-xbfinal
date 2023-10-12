@@ -17,6 +17,8 @@ public class DefaultListableBeanFactory extends  AbstractAutowireCapableBeanFact
 
     private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
+
+    //AbstractAutowireCapableBeanFactory继承AbstractBeanFactory 的getBeanDefinition
     @Override
     protected BeanDefinition getBeanDefinition(String beanName) {
         BeanDefinition beanDefinition = beanDefinitionMap.get(beanName);

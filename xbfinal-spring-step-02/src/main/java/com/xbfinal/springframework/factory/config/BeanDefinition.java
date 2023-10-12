@@ -10,11 +10,9 @@ public class BeanDefinition {
 
     // 定义成 Class 这样就可以把 Bean 的实例化操作放到容器中处理了。
     private Class beanClass;
-
     public BeanDefinition(Class beanClass){
         this.beanClass = beanClass;
     }
-
     public Class getBeanClass() {
         return beanClass;
     }

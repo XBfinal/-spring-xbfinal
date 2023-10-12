@@ -18,6 +18,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends  AbstractBeanFa
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        //此方法是DefaultSingletonBeanRegistry中的 保存单例bean
         addSingleton(beanName,bean);
         return bean;
     }
