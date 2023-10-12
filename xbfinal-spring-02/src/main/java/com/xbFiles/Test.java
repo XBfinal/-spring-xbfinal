@@ -16,7 +16,6 @@ public class Test {
         XBApplicationContext xbApplicationContext = new XBApplicationContext(AppConfig.class);
         UserService userService = (UserService)xbApplicationContext.getBean("userService");
         userService.printOrderService();
-
     }
 }
 

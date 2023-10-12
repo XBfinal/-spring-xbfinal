@@ -22,12 +22,13 @@ public class UserService implements BeanNameAware , InitializingBean {
     }
 
     public void printOrderService(){
-        System.out.println("orderService: "+orderService);
-        System.out.println("beanName: "+beanName);
+        System.out.println("自动注入验证==》orderService: "+orderService);
+        System.out.println("BeanNameAware接口验证===》beanName: "+beanName);
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("这是spring提供的初始化的方式~~~ 逻辑有程序员自己实现");
+        System.out.println("验证InitializingBean 初始化 ~~~ 逻辑有程序员自己实现");
     }
+
 }
